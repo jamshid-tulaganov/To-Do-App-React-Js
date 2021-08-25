@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+@media (max-width: 500px) {
+.Header{
+    width: 100%;
+    background-color: #5685FE;
+}
+.Container{
+    max-width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+.Header--Container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.Header__Menu{
+    background: none;
+    border:none;
+    outline: none;
+    margin-left: auto;
+}
+/* Menu part*/
+.Menu{
+    position: relative;
+}
+.Menu__Create{
+    padding: 4px;
+    position: fixed;
+    top:80vh;
+    right: 30px;
+    background-color: #5685FE;
+    border-radius: 50%;
+    box-shadow: 2px 3px 4px #999;
+}
+.Menu__Create__Element{
+    display: inline-block;
+    background: none;
+    border:none;
+    outline: none;
+}
+/* task -form */
+ .Add-Task{
+     position: relative;
+ }
+ .Task-Form{
+     width: 90%;
+     display: flex;
+     align-items: center;
+     position: fixed;
+     bottom:0;
+ }
+ .Add-Task-Input{
+     width: 80%;
+     background: none;
+     border: none;
+     padding: 10px 10px 0 10px;
+     outline:none;
+     border-bottom: 1px solid #000;
+     font-size: 20px;
+     line-height: normal;;
+     font-family: "Arial", sans-serif;
+ }
+.Add-Task-Button{
+    background: none;
+    border:none;
+    outline: none;
+}
+/* section elemnent*/
+.Task-Section{
+    margin-top:10px;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Task-Section__List{
+    padding-left: 0;
+    margin: 0;
+    list-style-type:none;
+}
+.Task-Section__List__Item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+    padding: 5px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #111;
+    line-height: normal;
+    font-family: Arial,sans-serif;
+    position: relative;
+}
+.Task-Section__List__Item p{
+    width: 80%;
+    min-height: 10px;
+    margin-left: 10px;
+    overflow-wrap: break-word;
+}
+.Task-Section__List__Item:hover svg path{
+    fill:#000;
+}
+.Task-Section__List__Item__Button{
+    display: inline-block;
+    margin-left: auto;
+    background: none;
+    border: none;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* scroll color change*/
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
